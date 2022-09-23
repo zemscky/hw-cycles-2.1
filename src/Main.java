@@ -25,5 +25,16 @@ public class Main {
         for (int j = 10; j > 0; j--) {
             System.out.print(j + " ");
         }
+//        Задание 3
+        System.out.println("Задание 3");
+        int population = 12_000_000; // Число жителей
+        int fertility = 17; // Рождаемость на 1000
+        int mortality = 8; // Смертность на 1000
+        int difference = fertility - mortality;
+        for (int year=1; year<=10;year++) {
+            population = population + population * difference /1000;
+            System.out.println("Год " + year + " численность населения составляет " + population);
+
+        }
     }
 }
