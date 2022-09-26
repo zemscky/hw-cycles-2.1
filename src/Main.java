@@ -5,14 +5,15 @@ public class Main {
         System.out.println("Задание 1");
         double contribution = 15_000; // Вклад
         double accumulationAmount = 0; // Cумма накопления
-        int i = 0;
-        while (accumulationAmount <= 2_459_000) {
+        int accumulate = 2_459_000;
+        int month = 0;
+        while (accumulationAmount <= accumulate) {
             accumulationAmount = accumulationAmount + accumulationAmount / 100;
             accumulationAmount = accumulationAmount + contribution;
-            i += 1;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + String.format("%.2f", accumulationAmount) + " рублей");
+            month += 1;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + String.format("%.2f", accumulationAmount) + " рублей");
         }
-        System.out.println(i + " месяцев, необходимо для накопления данной суммы");
+        System.out.println(month + " месяцев, необходимо для накопления данной суммы");
 
 //        Задание 2
         System.out.println("Задание 2");
